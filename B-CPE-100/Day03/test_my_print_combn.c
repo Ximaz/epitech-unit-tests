@@ -20,7 +20,7 @@ Test(my_print_combn, correct_return_value_and_output_for_1, .init = cr_redirect_
 
 Test(my_print_combn, correct_return_value_and_output_for_2, .init = cr_redirect_stdout)
 {
-    int res = my_print_combn(1);
+    int res = my_print_combn(2);
 
     cr_assert_eq(res, 0);
     cr_assert_stdout_eq_str("01, 02, 03, 04, 05, 06, 07, 08, 09, 12, 13, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 34, 35, 36, 37, 38, 39, 45, 46, 47, 48, 49, 56, 57, 58, 59, 67, 68, 69, 78, 79, 89");
