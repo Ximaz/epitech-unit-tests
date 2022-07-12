@@ -37,6 +37,8 @@ The test has to respect the Coding Style used on the time it's wrote.
 ## Opening the pull request
 Once you wrote your unit tests, and they respect the Coding Style and the format described above, it's time to open a pull request. To do so, you will have to describe the content of your tests. For instance :
 ```markdown
-I wrote `number_of_tests` tests in order to test the `func_name` function. It uses some libc functions / It does not use any libc function. It tests for the result into the console / It does not test for the result into the console.
+I wrote `number_of_tests` tests in order to test the `func_name` function.
+It uses some libc functions / It does not use any libc function.
+It tests for the result into the console / It does not test for the result into the console.
 ```
 
