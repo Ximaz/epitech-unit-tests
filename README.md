@@ -6,7 +6,7 @@ To write unit tests, you have to read the [Criterion documentation](https://crit
 
 # Opening a pull request
 Once you wrote your unit tests, and you tested them to be sure the result expected by the Epitech assignement is the same you're trying to test, you can open a pull request. It has to contain all the tests file with the following format :
-- file's name : test_<test_name>.c
+- file's name : `test_<test_name>.c`
 - file's header :
 ```c
 /*
