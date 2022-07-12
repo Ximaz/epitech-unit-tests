@@ -47,8 +47,8 @@ To do so, you will have to describe the content of your tests. For instance :
 I wrote `number_of_tests` tests in order to test the `func_name` function.
 It uses some libc functions / It does not use any libc function.
 It tests for the result into the console / It does not test for the result into the console.
+```
 
 ### Tests already exist
 If some tests are already available, you will have to put your name into the `Authors` section from the header, and then add your tests at the end of the file. if some extra include are required, you will have to put them at the top of the file, right after the header section.
-```
 
