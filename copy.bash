@@ -6,19 +6,28 @@ function usage {
     echo "Error : ${1}"
 }
 
-function main {
-    local CHAPTER="${1}"
-    local SOURCE=~/Desktop/epitech/$CHAPTER
+function build_src {
+    Echo ~/Desktop/epitech/$1
+}
 
-    if [[ "${CHAPTER}" = "" ]]; then
+function check_arguments {
+    local SOURCE=$(build_src "${1}")
+
+    if [[ "${1}" = "" ]]; then
         usage "no chapter provided."
         exit 1
-    else
-        if [[ ! -d "${SOURCE}" ]]; then
-            usage "invalid chapter provided. '${CHAPTER}'"
-            exit 1
-        fi
     fi
+    if [[ ! -d "${SOURCE}" ]]; then
+        usage "invalid chapter provided. '${1}'"
+        exit 1
+    fi
+}
+
+function main {
+    local CHAPTER="${1}"
+    local SOURCE=$(build_src "${CHAPTER}")
+
+    check_arguments "${@}"
     rm -rf "${CHAPTER}"
     for d in $(ls -p "${SOURCE}" | grep '/'); do
         if [[ -d "${SOURCE}/${d}tests" ]]; then
