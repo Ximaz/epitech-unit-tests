@@ -1,6 +1,6 @@
 /*
 ** EPITECH UNIT TESTS, 2022
-** Authors : Ximaz
+** Authors : Ximaz, Adam Brutsaert
 ** File description :
 ** Unit tests to test the my_print_alpha function.
 */
@@ -10,7 +10,7 @@
 
 int my_print_alpha(void);
 
-Test(my_print_alpha, test_one, .init = cr_redirect_stdout)
+Test(my_print_alpha, correct_return_value_and_output, .init = cr_redirect_stdout)
 {
     int res = my_print_alpha();
 
