@@ -34,6 +34,15 @@ function check_arguments {
     fi
 }
 
+function handle_tests {
+    local CHAPTER="${1}"
+    local DAY="${2}"
+    local SOURCE=$(build_src "${CHAPTER}")
+
+    mkdir -p "${CHAPTER}/${d}"
+    cp "${SOURCE}/${d}tests/"*.c "${CHAPTER}/${d}"
+}
+
 function main {
     local CHAPTER="${1}"
     local SOURCE=$(build_src "${CHAPTER}")
@@ -42,8 +51,7 @@ function main {
     rm -rf "${CHAPTER}"
     for d in $(ls -p "${SOURCE}" | grep '/'); do
         if [[ -d "${SOURCE}/${d}tests" ]]; then
-            mkdir -p "${CHAPTER}/${d}"
-            cp "${SOURCE}/${d}tests/"*.c "${CHAPTER}/${d}"
+            handle_tests "${CHAPTER}" "${d}"
         fi
     done
     exit 0
