@@ -52,3 +52,7 @@ It tests for the result into the console / It does not test for the result into 
 ### Tests already exist
 If some tests are already available, you will have to put your name into the `Authors` section from the header, and then add your tests at the end of the file. if some extra include are required, you will have to put them at the top of the file, right after the header section.
 
+## Other files
+You may find the `copy.bash` file and the `make_header.py` file. You may not use the `copy.bash` on chapter that already exists, because it will overwrite tests, including headers where all authors were mentioned with their tests. Same thing about the `make_header.py`, it will overwrite the headers only, but there is no protection yet.
+
+
