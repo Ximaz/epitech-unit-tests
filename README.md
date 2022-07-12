@@ -3,7 +3,7 @@
 This repository will contain as many Criterion unit tests for Epitech as possible. The main goal is to have a huge tests collections to let Epitech students test their functions during the Cpool process. As you may know, an automated program will collect students assignments to apply automated tests on them and graduate their work as a result.
 
 ### Why ?
-So, to make sure the program can be greatly graduated, I thought it could be a good idea that any student who writes unit tests actaully share them to other people using a public repository. This way, any one can clone, pull for new tests, and then use them as a pre-evaluator.
+So, to make sure the program can be greatly graduated, I thought it could be a good idea that any student who writes unit tests actaully share them to other people using a public repository. This way, anyone can clone, pull for new tests, and then use them as a pre-evaluator.
 
 ## Unit Tests writing
 To write unit tests, you have to read the [Criterion documentation](https://criterion.readthedocs.io/en/stable/) which will teach you how to work with the API. Then, you may want to take a look at the [EPITECH extra information](https://epitech-2022-technical-documentation.readthedocs.io/en/latest/criterion.html) about this library. Make sure you're testing for what EPITECH hopes from the assignments. You can use the libc to compare functions return value, and so on... Be creative ! 🙂 
@@ -36,7 +36,7 @@ Test(my_isneg, test_one, .init = cr_redirect_stdout)
     cr_assert_stdout_eq_str("N");
 }
 ```
-The test has to respect the Coding Style used on the time it's wrote.
+The test has to respect the Coding Style used at the time it's written.
 
 ## Opening the pull request
 Once you wrote your unit tests, and they respect the Coding Style and the format described above, it's time to open a pull request.
