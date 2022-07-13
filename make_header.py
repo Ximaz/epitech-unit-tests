@@ -79,5 +79,5 @@ def main():
             handle_chapter(chapter)
 
 if __name__ == "__main__":
-    main()
-
+    # main()
+    handle_chapter("B-CPE-101")
