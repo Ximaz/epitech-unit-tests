@@ -153,3 +153,14 @@ Test(my_strtol, test_thirteen)
 	cr_assert_eq(n1, n2);
     cr_assert_str_eq(number1, number2);
 }
+
+Test(my_strtol, test_fourteen)
+{
+    char *number1 = "ZIK0ZKZZZZZZ";
+    char *number2 = "ZIK0ZKZZZZZZ";
+	long n1 = strtol(number1, &number1, 0);
+	long n2 = my_strtol(number2, &number2, 0);
+
+	cr_assert_eq(n1, n2);
+    cr_assert_str_eq(number1, number2);
+}
