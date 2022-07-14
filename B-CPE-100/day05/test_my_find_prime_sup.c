@@ -5,7 +5,6 @@
 ** Unit tests to test the my_find_prime_sup function.
 */
 
-#include <stdio.h>
 #include <criterion/criterion.h>
 
 int my_find_prime_sup(int nb);

@@ -5,7 +5,6 @@
 ** Unit tests to test the my_apply_on_nodes function.
 */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include "../include/my.h"
 #include "../include/mylist.h"

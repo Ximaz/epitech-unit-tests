@@ -5,7 +5,6 @@
 ** Unit tests to test the my_list_size function.
 */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include "../include/mylist.h"
 #include <criterion/criterion.h>

@@ -5,7 +5,6 @@
 ** Unit tests to test the my_params_to_array function.
 */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <criterion/criterion.h>
 #include "../include/my_info_param.h"

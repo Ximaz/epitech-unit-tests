@@ -5,7 +5,6 @@
 ** Unit tests to test the my_merge function.
 */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "../include/my.h"

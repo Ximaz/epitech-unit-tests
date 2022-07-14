@@ -5,7 +5,6 @@
 ** Unit tests to test the my_getnbr function.
 */
 
-#include <stdio.h>
 #include <criterion/criterion.h>
 
 int my_getnbr(char const *str);

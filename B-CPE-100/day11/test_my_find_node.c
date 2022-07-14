@@ -5,7 +5,6 @@
 ** Unit tests to test the my_find_node function.
 */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include "../include/my.h"
 #include "../include/mylist.h"
