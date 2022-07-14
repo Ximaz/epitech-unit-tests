@@ -4,6 +4,7 @@
 ** File description :
 ** Unit tests to test the infini_add function.
 */
+
 #include <stdlib.h>
 #include <criterion/criterion.h>
 
